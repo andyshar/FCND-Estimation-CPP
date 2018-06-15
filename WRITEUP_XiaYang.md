@@ -423,3 +423,14 @@ PASS: ABS(Quad.Est.E.Pos) was less than 1.000000 for at least 20.000000 seconds
 Simulation #19 (../config/11_GPSUpdate.txt)
 PASS: ABS(Quad.Est.E.Pos) was less than 1.000000 for at least 20.000000 seconds
 ```
+
+According to the first review, I have to de-tune the controller again.
+1. Replace QuadController.cpp with the controller I wrote in the project FCND-Controls-CPP.
+2. Replace QuadControlParams.txt with the control parameters I came up with in the project FCND-Controls-CPP.
+
+The senario 05_TrojectoryFollow ran well now.
+![q7](images/step7.jpg)
+```
+Simulation #36 (../config/05_TrajectoryFollow.txt)
+PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
+```
